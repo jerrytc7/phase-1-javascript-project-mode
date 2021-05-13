@@ -1,0 +1,16 @@
+As a user, I want to see a list of team names' as the page loads
+
+As a user, I want to select a team to display player names from team
+
+as a user, I want to select a player and see stats (playerinfoAPI for name and biostats & carrerhittingstatsAPI for MLB statistics.
+
+EXTRA   
+
+Style like baseball cards
+
+MVP
+DOMContentLoaded eventListener that will make a fetch request and then rednder team names to the page.
+
+select eventListener that will rerender the list of team names based on team name filter
+
+reset button with click listener that will revert back to original list of player names
