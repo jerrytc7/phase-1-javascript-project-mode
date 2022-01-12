@@ -1,3 +1,8 @@
+Install with npm install http-server -g
+then
+Run http-server in terminal
+default port 8080
+
 # JavaScript Project Mode 
 
 ## Learning Goals
