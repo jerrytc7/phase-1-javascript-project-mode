@@ -7,20 +7,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 const fetchTeams = () => {
-    fetch("http://lookup-service-prod.mlb.com/json/named.team_all_season.bam?sport_code='mlb'&season='2020'&all_star_sw='N'")
+    fetch("https://lookup-service-prod.mlb.com/json/named.team_all_season.bam?sport_code='mlb'&season='2020'&all_star_sw='N'")
         .then(res => res.json())
         .then(data => renderTeams2(data.team_all_season.queryResults.row))
         .catch(error => console.log(error))
 }
 const fetchPlayers = (id) => {
-    fetch(`http://lookup-service-prod.mlb.com/json/named.roster_40.bam?team_id=${id}`)
+    fetch(`https://lookup-service-prod.mlb.com/json/named.roster_40.bam?team_id=${id}`)
         .then(res => res.json())
         .then(data => renderPlayers(data.roster_40.queryResults.row))
         .catch(error => console.log(error))
 }
 
 const fetchStats = (id) => {
-    fetch("http://lookup-service-prod.mlb.com/json/named.sport_career_hitting.bam?league_list_id='mlb'&game_type='R'&player_id=" + id)
+    fetch("https://lookup-service-prod.mlb.com/json/named.sport_career_hitting.bam?league_list_id='mlb'&game_type='R'&player_id=" + id)
         .then(res => res.json())
         .then(data => renderStats(data))
         .catch(error => console.log(error))
